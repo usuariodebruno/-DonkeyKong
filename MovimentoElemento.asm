@@ -1,10 +1,10 @@
 .text
-main: lui $8, 0x1001
-      addi $9, $0, 0xff     
+main: lui $8, 0x1001 #carregar cenraio
+      addi $9, $0, 0xa1a1a1  #cor doElemento
       addi $10, $0, 32      
       
 for1: beq $10, $0, fimlinha1
-      sw $9, 0($8)
+      sw $9, 0($8) # endereçõ recebe a cor
       jal timer
       sw $0, -4($8)
       addi $8, $8, 4
