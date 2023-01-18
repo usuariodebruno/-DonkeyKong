@@ -1,7 +1,7 @@
 .text
 main: lui $8, 0x1001 #carregar cenraio
       addi $9, $0, 0xa1a1a1  #cor doElemento
-      addi $10, $0, 32      
+      addi $10, $0, 32  #numero de colunas    
       
 for1: beq $10, $0, fimlinha1
       sw $9, 0($8) # endereçõ recebe a cor
